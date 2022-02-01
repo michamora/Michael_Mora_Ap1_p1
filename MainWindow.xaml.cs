@@ -24,5 +24,18 @@ namespace Parcial1
         {
             InitializeComponent();
         }
+   
+        private void RegistroMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+
+        private void ConsultaMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+             
+        }
+
+
     }
 }
