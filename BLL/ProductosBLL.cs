@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Parcial1.BLL
 {
-    /*
+    
     public class ProductosBLL
     {
        public static bool Existe(int productoId)
@@ -30,7 +30,105 @@ namespace Parcial1.BLL
            }
            return encontrado;
        }
+
+          public static bool Guardar(Productos productos)
+          {
+              if (!Existe(productos.ProductoId))
+                  return Insertar (productos);
+
+              else
+                  return Modificar(productos);
+
+          }
+
+          public static bool Insertar (Productos producto)
+          {
+              Contexto contexto = new Contexto();
+              bool paso = false;
+              try
+              {
+                  contexto.Productos.Add(producto);
+                  paso = contexto.SaveChanges() >0;
+              }
+              catch (Exception)
+              {
+                  throw;
+              }
+              finally
+              {
+                contexto.Dispose();
+              }
+              return paso;
+        
+          }
+
+          public static bool Modificar(Productos producto)
+          {
+              Contexto contexto = new Contexto();
+              bool paso = false;
+              try 
+              {
+                  contexto.Entry(producto).State = EntityState.Modified;
+                  paso = contexto.SaveChanges() > 0;
+
+              }
+              catch (Exception)
+              {
+                  throw;
+              }
+              finally
+              {
+                  contexto.Dispose();
+              }
+              return paso;
+          }
+
+          public static bool Eliminar (int productoId)
+          {
+              Contexto contexto = new Contexto();
+              bool paso = false;
+              try
+              {
+                  var producto = contexto.Productos.Find(productoId);
+                  if (producto != null)
+
+                  {
+                      contexto.Productos.Remove(producto);
+                      paso = contexto.SaveChanges() > 0;
+
+                  }
+              }
+              catch (Exception)
+              {
+                  throw;
+              }
+              finally
+              {
+                  contexto.Dispose();
+              }
+              return paso;
+          }
+
+          public static Productos? Buscar(int productoId)
+          {
+              Contexto contexto = new Contexto();
+              Productos? producto;
+              try 
+              {
+                 producto = contexto.Productos.Find(productoId);
+              }
+
+              catch (Exception)
+              {
+                  throw;
+              }
+              finally
+              {
+                  contexto.Dispose();
+              }
+              return producto;
+          }
  
     }
-    */
+    
 }
