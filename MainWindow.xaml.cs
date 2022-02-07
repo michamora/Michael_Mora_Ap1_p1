@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Parcial1.UI.Registros;
+using Parcial1.UI.Consultas;
 
 namespace Parcial1
 {
@@ -27,12 +29,18 @@ namespace Parcial1
    
         private void RegistroMenuItem_Click(object sender, RoutedEventArgs e)
         {
+
+            var rName = new rName();
+            rName.Show();
             
         }
 
 
         private void ConsultaMenuItem_Click(object sender, RoutedEventArgs e)
         {
+            
+             var cName= new cName();
+            cName.Show();
              
         }
 

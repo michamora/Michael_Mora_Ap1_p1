@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Clase2.UI.Registros"
+        xmlns:local="clr-namespace:Parcial1.UI.Registros"
         mc:Ignorable="d"
         Title="Registro de Name" Height="300" Width="300">
     <Grid>
@@ -25,9 +25,9 @@
                         Orientation="Horizontal" 
                         HorizontalAlignment="Center" >
                 
-                <Button Content="🆕 Nuevo" Click="NuevoButton_Click"/>
-                <Button Content="✔ Guardar" Click="GuardarButton_Click" />
-                <Button Content="⛔ Eliminar" Click="EliminarButton_Click"/>
+                <Button Content="✏️ Nuevo" Click="NuevoButton_Click"/>
+                <Button Content="📥 Guardar" Click="GuardarButton_Click" />
+                <Button Content="❌ Eliminar" Click="EliminarButton_Click"/>
             </StackPanel>
 
         </StackPanel>
