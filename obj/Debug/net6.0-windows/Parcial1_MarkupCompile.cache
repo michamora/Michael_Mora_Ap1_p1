@@ -1,20 +1,20 @@
 ﻿Parcial1
-1.0.0.0
+
 
 winexe
 C#
 .cs
-c:\Users\Michael\Documents\Aplicada 1\Parcial1\obj\Debug\net6.0-windows\
+C:\Users\Michael\Documents\Aplicada 1\Parcial1\obj\Debug\net6.0-windows\
 Parcial1
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-c:\Users\Michael\Documents\Aplicada 1\Parcial1\App.xaml
+C:\Users\Michael\Documents\Aplicada 1\Parcial1\App.xaml
 313399843
 
-9-1594910356
-2122078404095
+11-2043269796
+212-1446142602
 MainWindow.xaml;UI\Consultas\cName.xaml;UI\Registros\rName.xaml;
 
-True
+False
 
