@@ -30,8 +30,8 @@ namespace Parcial1
         private void RegistroMenuItem_Click(object sender, RoutedEventArgs e)
         {
 
-            var rName = new rName();
-            rName.Show();
+            var rProductos = new rProductos();
+            rProductos.Show();
             
         }
 
@@ -39,8 +39,8 @@ namespace Parcial1
         private void ConsultaMenuItem_Click(object sender, RoutedEventArgs e)
         {
             
-             var cName= new cName();
-            cName.Show();
+             var cProductos= new cProductos();
+            cProductos.Show();
              
         }
 
