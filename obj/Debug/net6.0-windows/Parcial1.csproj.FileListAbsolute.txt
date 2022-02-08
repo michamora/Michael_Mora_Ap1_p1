@@ -1,7 +1,5 @@
 C:\Users\Michael\Documents\Aplicada 1\Parcial1\obj\Debug\net6.0-windows\Parcial1.csproj.AssemblyReference.cache
 C:\Users\Michael\Documents\Aplicada 1\Parcial1\obj\Debug\net6.0-windows\MainWindow.g.cs
-C:\Users\Michael\Documents\Aplicada 1\Parcial1\obj\Debug\net6.0-windows\UI\Consultas\cName.g.cs
-C:\Users\Michael\Documents\Aplicada 1\Parcial1\obj\Debug\net6.0-windows\UI\Registros\rName.g.cs
 C:\Users\Michael\Documents\Aplicada 1\Parcial1\obj\Debug\net6.0-windows\App.g.cs
 C:\Users\Michael\Documents\Aplicada 1\Parcial1\obj\Debug\net6.0-windows\Parcial1_MarkupCompile.cache
 C:\Users\Michael\Documents\Aplicada 1\Parcial1\obj\Debug\net6.0-windows\Parcial1_MarkupCompile.lref
@@ -47,8 +45,6 @@ C:\Users\Michael\Documents\Aplicada 1\Parcial1\bin\Debug\net6.0-windows\runtimes
 C:\Users\Michael\Documents\Aplicada 1\Parcial1\bin\Debug\net6.0-windows\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\Michael\Documents\Aplicada 1\Parcial1\bin\Debug\net6.0-windows\runtimes\win-x86\native\e_sqlite3.dll
 C:\Users\Michael\Documents\Aplicada 1\Parcial1\obj\Debug\net6.0-windows\MainWindow.baml
-C:\Users\Michael\Documents\Aplicada 1\Parcial1\obj\Debug\net6.0-windows\UI\Consultas\cName.baml
-C:\Users\Michael\Documents\Aplicada 1\Parcial1\obj\Debug\net6.0-windows\UI\Registros\rName.baml
 C:\Users\Michael\Documents\Aplicada 1\Parcial1\obj\Debug\net6.0-windows\Parcial1.g.resources
 C:\Users\Michael\Documents\Aplicada 1\Parcial1\obj\Debug\net6.0-windows\Parcial1.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Michael\Documents\Aplicada 1\Parcial1\obj\Debug\net6.0-windows\Parcial1.AssemblyInfoInputs.cache
@@ -59,3 +55,7 @@ C:\Users\Michael\Documents\Aplicada 1\Parcial1\obj\Debug\net6.0-windows\Parcial1
 C:\Users\Michael\Documents\Aplicada 1\Parcial1\obj\Debug\net6.0-windows\ref\Parcial1.dll
 C:\Users\Michael\Documents\Aplicada 1\Parcial1\obj\Debug\net6.0-windows\Parcial1.pdb
 C:\Users\Michael\Documents\Aplicada 1\Parcial1\obj\Debug\net6.0-windows\Parcial1.genruntimeconfig.cache
+C:\Users\Michael\Documents\Aplicada 1\Parcial1\obj\Debug\net6.0-windows\UI\Consultas\cProductos.g.cs
+C:\Users\Michael\Documents\Aplicada 1\Parcial1\obj\Debug\net6.0-windows\UI\Registros\rProductos.g.cs
+C:\Users\Michael\Documents\Aplicada 1\Parcial1\obj\Debug\net6.0-windows\UI\Consultas\cProductos.baml
+C:\Users\Michael\Documents\Aplicada 1\Parcial1\obj\Debug\net6.0-windows\UI\Registros\rProductos.baml

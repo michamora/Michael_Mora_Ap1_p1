@@ -17,7 +17,7 @@ namespace Parcial1.BLL
 
            try
            {
-               encontrado = contexto.Productos.Any(1 => 1.ProductoId == productoId);
+               encontrado = contexto.Productos.Any(l => l.ProductoId == productoId);
                
            }
            catch (Exception)

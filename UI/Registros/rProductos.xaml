@@ -5,33 +5,41 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Parcial1.UI.Registros"
         mc:Ignorable="d"
-        Title="Registro de Productos" Height="300" Width="300">
+        Title="Registro de Productos" Height="350" Width="300">
     <Grid>
 
         <StackPanel Orientation="Vertical" Margin="10"> 
            
            
             <StackPanel Orientation="Vertical">
-                <Label Content="Id:"/>
-                <Label Content="Descripcion:"/>
-                <Label Content="Existencia:"/>
-                <Label Content="Costo:"/>
-                <Label Content="ValorInventario:"/>
-
+                <Label Content="ProductoId:"/>
+               
                 <StackPanel Orientation="Horizontal">
-                    <TextBox Text="{Binding NameId}" Width="100" />
+                    <TextBox Text="{Binding ProductoId}" Width="100" />
                     <Button Content="🔎 Buscar" Click="BuscarButton_Click" /> 
                 </StackPanel>
             </StackPanel>
+
+                <Label Content="Descripcion:"/>
+                 <TextBox x:Name= "DescripcionTextBox" Text ="{Binding Descripcion}" Width="190" />
+
+                <Label Content="Existencia:"/>
+                <TextBox x:Name= "ExistenciaTextBox" Text ="{Binding Existencia}" Width="190" />
+
+                <Label Content="Costo:"/>
+                <TextBox x:Name= "CostoTextBox" Text ="{Binding Costo}" Width="190" />
+
+                <Label Content="ValorInventario:"/>
+                <TextBox x:Name= "ValorInventarioTextBox" Text ="{Binding ValorInventario}" Width="190" />
+
 
             <StackPanel 
                         Margin="0,16,0,0"                      
                         Orientation="Horizontal" 
                         HorizontalAlignment="Center" >
                 
-                <Button Content="✏️ Nuevo" Click="EditarButton_Click"/>
-                <Button Content="📥 Guardar" Click="GuardarButton_Click" />
-                
+                <Button Content="✏️ Nuevo" Click="NuevoButton_Click"/>
+                <Button Content="📥 Guardar" Click="GuardarButton_Click" />               
                 <Button Content="❌ Eliminar" Click="EliminarButton_Click"/>
                 
             </StackPanel>
