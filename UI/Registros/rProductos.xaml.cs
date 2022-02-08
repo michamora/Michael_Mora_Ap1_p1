@@ -49,6 +49,14 @@ namespace Parcial1.UI.Registros
                 MessageBox.Show("Debe ingresar la existencia", "Validacion", MessageBoxButton.OK, MessageBoxImage.Error);
 
            }
+           else  if (string.IsNullOrWhiteSpace(Producto.Costo))
+           {
+
+                esValido = false;
+                CostoTextBox.Focus();
+                MessageBox.Show("Debe ingresar el costo", "Validacion", MessageBoxButton.OK, MessageBoxImage.Error);
+
+           }
             
             return esValido;
         }
@@ -90,9 +98,7 @@ namespace Parcial1.UI.Registros
            if (paso)
            MessageBox.Show("Producto guardado con exito", "Exito", MessageBoxButton.OK, MessageBoxImage.Error);
            else
-           MessageBox.Show("No se pudo guardar el producto", "Fallo", MessageBoxButton.OK, MessageBoxImage.Error);
-        
-          
+           MessageBox.Show("No se pudo guardar el producto", "Fallo", MessageBoxButton.OK, MessageBoxImage.Error);     
 
         }
 

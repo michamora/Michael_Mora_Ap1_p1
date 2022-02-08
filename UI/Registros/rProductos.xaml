@@ -29,9 +29,10 @@
                 <Label Content="Costo:"/>
                 <TextBox x:Name= "CostoTextBox" Text ="{Binding Costo}" Width="190" />
 
-                <Label Content="ValorInventario:"/>
-                <TextBox x:Name= "ValorInventarioTextBox" Text ="{Binding ValorInventario}" Width="190" />
+                <Label Content="Valor Inventario:"/>
+                <TextBox x:Name= "ValorInventarioTextBox" Text ="{Binding ValorInventario}" IsReadOnly="True" Width="190" />
 
+                
 
             <StackPanel 
                         Margin="0,16,0,0"                      
