@@ -10,7 +10,7 @@ namespace Parcial1.Entidades
        public int ProductoId {get; set;}
         
       
-       public string Descripcion{ get; set;}
+       public string Descripcion { get; set;}
 
        
        public float Existencia{ get; set;}

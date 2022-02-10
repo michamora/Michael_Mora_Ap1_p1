@@ -48,7 +48,7 @@ namespace Parcial1.UI.Registros
 
        
 
-        private bool Validar()
+        private bool Validar() 
         {
             bool esValido = true;
 
@@ -56,14 +56,14 @@ namespace Parcial1.UI.Registros
             {
                 esValido = false;
                 DescripcionTextBox.Focus();
-                MessageBox.Show("Debe ingresar una descripcion", "Validacion", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Debe ingresar una descripcion", "Validacion", MessageBoxButton.OK, MessageBoxImage.Information);
             }
            else  if (Producto.Existencia < 0)
            {
 
                 esValido = false;
                 ExistenciaTextBox.Focus();
-                MessageBox.Show("Debe ingresar la existencia", "Validacion", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Debe ingresar la existencia", "Validacion", MessageBoxButton.OK, MessageBoxImage.Information);
 
            }
            else  if (Producto.Costo < 0)
@@ -71,13 +71,13 @@ namespace Parcial1.UI.Registros
 
                 esValido = false;
                 CostoTextBox.Focus();
-                MessageBox.Show("Debe ingresar el costo", "Validacion", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Debe ingresar el costo", "Validacion", MessageBoxButton.OK, MessageBoxImage.Information);
 
            }
             
             return esValido;
         }
-        private void BuscarButton_Click(object sender, RoutedEventArgs e)
+        private void BuscarButton_Click(object sender, RoutedEventArgs e) // Boton Buscar
         {
             var encontrado = ProductosBLL.Buscar(this.Producto.ProductoId);
 
@@ -103,28 +103,36 @@ namespace Parcial1.UI.Registros
         }
 
 
-        private void GuardarButton_Click(object sender, RoutedEventArgs e)
+        private void GuardarButton_Click(object sender, RoutedEventArgs e) // Boton Guardar
         {
            bool paso = false;
 
            if (!Validar())
            return;
 
+            var existeDescripcion = ProductosBLL.GetList(p => true).Any(p => p.Descripcion == Producto.Descripcion);
+        if (existeDescripcion)
+            {
+                MessageBox.Show("Ya existe este producto. Ingrese otro distinto", "Error");
+                return;
+            }
+
+
            paso = ProductosBLL.Guardar(Producto);
 
            if (paso)
-           MessageBox.Show("Producto guardado con exito", "Exito", MessageBoxButton.OK, MessageBoxImage.Error);
+           MessageBox.Show("Producto guardado con exito", "Exito", MessageBoxButton.OK, MessageBoxImage.Information);
            else
            MessageBox.Show("No se pudo guardar el producto", "Fallo", MessageBoxButton.OK, MessageBoxImage.Error);     
 
         }
 
-        private void EliminarButton_Click(object sender, RoutedEventArgs e)
+        private void EliminarButton_Click(object sender, RoutedEventArgs e) // Boton Eliminar
         {
             if (ProductosBLL.Eliminar(Producto.ProductoId))
             {
                 Limpiar();
-                 MessageBox.Show("Producto eliminado con exito", "Exito", MessageBoxButton.OK, MessageBoxImage.Error);
+                 MessageBox.Show("Producto eliminado con exito", "Exito", MessageBoxButton.OK, MessageBoxImage.Information);
                
             }
             else
@@ -133,7 +141,7 @@ namespace Parcial1.UI.Registros
 
         }
 
-         void calcularInventario(){
+         void calcularInventario(){    // Hacer el calculo del inventario
 
              float Existencia = float.TryParse(ExistenciaTextBox.Text, out Existencia) ? Existencia : 0;
              float Costo = float.TryParse(CostoTextBox.Text, out Costo) ? Costo : 0;
@@ -145,7 +153,7 @@ namespace Parcial1.UI.Registros
              
         }
 
-         private void OnCostoTextBoxChanged(object sender, EventArgs e)
+         private void OnCostoTextBoxChanged(object sender, EventArgs e) // Notificar el inventario cuando se ingrese el costo
           {
 
               calcularInventario();
