@@ -1,4 +1,18 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+using Parcial1;
 using Parcial1.Entidades;
 using Parcial1.BLL;
 
@@ -11,6 +25,7 @@ namespace Parcial1.UI.Registros
         public rProductos()
         {
             InitializeComponent();
+            
 
             this.DataContext = Producto;
 
@@ -31,6 +46,8 @@ namespace Parcial1.UI.Registros
             
         }
 
+       
+
         private bool Validar()
         {
             bool esValido = true;
@@ -41,7 +58,7 @@ namespace Parcial1.UI.Registros
                 DescripcionTextBox.Focus();
                 MessageBox.Show("Debe ingresar una descripcion", "Validacion", MessageBoxButton.OK, MessageBoxImage.Error);
             }
-           else  if (string.IsNullOrWhiteSpace(Producto.Existencia))
+           else  if (Producto.Existencia < 0)
            {
 
                 esValido = false;
@@ -49,7 +66,7 @@ namespace Parcial1.UI.Registros
                 MessageBox.Show("Debe ingresar la existencia", "Validacion", MessageBoxButton.OK, MessageBoxImage.Error);
 
            }
-           else  if (string.IsNullOrWhiteSpace(Producto.Costo))
+           else  if (Producto.Costo < 0)
            {
 
                 esValido = false;
@@ -115,6 +132,16 @@ namespace Parcial1.UI.Registros
            
 
         }
+
+         /*void calcularInventario(float Existencia, float Costo){
+
+             Existencia = float.Parse(ExistenciaTextBox.Text);
+             Costo = float.Parse(CostoTextBox.Text);
+
+             float ValorInventario = Existencia * Costo;
+             ValorInventarioTextBox.Text = Convert.ToString(ValorInventario);
+             Producto.ValorInventario = ValorInventario;
+        }*/
     }
 }
     

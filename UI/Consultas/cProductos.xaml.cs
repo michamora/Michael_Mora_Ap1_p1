@@ -26,22 +26,21 @@ namespace Parcial1.UI.Consultas
 
                 switch (FiltroComboBox.SelectedIndex)
                 {
-                    case 0: // Descripcion
+                    case 0: 
+                    int id = int.TryParse(CriterioTextBox.Text, out id) ? id : 0;
+                    if (id <= 0)
+                    {
+                        MessageBox.Show("ID no valido");
+                        break;
+                    }
+                    listado = ProductosBLL.GetList(p => p.ProductoId == id);
+                    
+                    break;
+
+                    case 1: // Descripcion
                     listado = ProductosBLL.GetList( l => l.Descripcion.Contains(CriterioTextBox.Text));
                     break;
 
-                    case 1: // Esistencia
-                    listado = ProductosBLL.GetList( l => l.Existencia.Contains(CriterioTextBox.Text));
-                    break;
-
-                    case 2: // Costo
-                    listado = ProductosBLL.GetList( l => l.Costo.Contains(CriterioTextBox.Text));
-                    break;
-
-                    case 3: // Valor Inventario
-                    listado = ProductosBLL.GetList( l => l.ValorInventario.Contains(CriterioTextBox.Text));
-                    break;
-                }
             }
 
            ProductosDataGrid.ItemsSource = null;
@@ -53,5 +52,6 @@ namespace Parcial1.UI.Consultas
           }
 
         }
+}
 
     

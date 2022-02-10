@@ -8,14 +8,19 @@ namespace Parcial1.Entidades
        [Key]
 
        public int ProductoId {get; set;}
-
+        
+      
        public string Descripcion{ get; set;}
 
-       public string Existencia{ get; set;}
+       
+       public float Existencia{ get; set;}
+       
+        
+       public float Costo{ get; set;}
 
-       public string Costo{ get; set;}
-
-       public string ValorInventario{ get; set;}
+          
+       public float ValorInventario{ get; set;}
 
    }
+   
 }
