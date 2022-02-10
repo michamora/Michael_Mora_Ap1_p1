@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Parcial1.UI.Consultas"
         mc:Ignorable="d"
-        Title="Consulta de Productos" Height="350" Width="450">
+        Title="Consulta de Productos" Height="350" Width="550">
     <Grid>
 
         <StackPanel Orientation="Vertical" Margin="10"> 
@@ -32,7 +32,7 @@
 
             </StackPanel>
 
-            <DataGrid x:Name="ProductosDataGrid"  Height="250" Width="380"> 
+            <DataGrid x:Name="ProductosDataGrid"  Height="250" Width="500"> 
               
             </DataGrid>
 

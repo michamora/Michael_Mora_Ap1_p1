@@ -11,11 +11,11 @@
 
         <StackPanel> 
             <Menu> 
-                <MenuItem Header="Registros" >
+                <MenuItem Header="Registros" Background = "#FFADD8E6">
                     <MenuItem Header="Productos" x:Name="rRegistro" Click ="RegistroMenuItem_Click" /> 
                     </MenuItem>
 
-                <MenuItem Header="Consultas" >
+                <MenuItem Header="Consultas" Background = "#FFFFE4E1">
                    <MenuItem Header="Productos" x:Name="cConsulta" Click ="ConsultaMenuItem_Click" />  
                     </MenuItem>
             </Menu>
