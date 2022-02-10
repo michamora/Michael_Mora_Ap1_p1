@@ -133,15 +133,26 @@ namespace Parcial1.UI.Registros
 
         }
 
-         /*void calcularInventario(float Existencia, float Costo){
+         void calcularInventario(){
 
-             Existencia = float.Parse(ExistenciaTextBox.Text);
-             Costo = float.Parse(CostoTextBox.Text);
+             float Existencia = float.TryParse(ExistenciaTextBox.Text, out Existencia) ? Existencia : 0;
+             float Costo = float.TryParse(CostoTextBox.Text, out Costo) ? Costo : 0;
 
              float ValorInventario = Existencia * Costo;
-             ValorInventarioTextBox.Text = Convert.ToString(ValorInventario);
              Producto.ValorInventario = ValorInventario;
-        }*/
+             ValorInventarioTextBox.Text = $"{ValorInventario:N2}";
+             
+             
+        }
+
+         private void OnCostoTextBoxChanged(object sender, EventArgs e)
+          {
+
+              calcularInventario();
+
+          }
+
+    
     }
 }
     

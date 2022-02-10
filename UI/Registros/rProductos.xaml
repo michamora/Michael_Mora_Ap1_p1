@@ -27,7 +27,7 @@
                 <TextBox x:Name= "ExistenciaTextBox" Text ="{Binding Existencia}" Width="190" />
 
                 <Label Content="Costo:"/>
-                <TextBox x:Name= "CostoTextBox" Text ="{Binding Costo}" Width="190" />
+                <TextBox x:Name= "CostoTextBox" Text ="{Binding Costo}" Width="190" TextChanged = "OnCostoTextBoxChanged" />
 
                 <Label Content="Valor Inventario:"/>
                 <TextBox x:Name= "ValorInventarioTextBox" Text ="{Binding ValorInventario}" Background = "#FFC0C0C0" IsReadOnly="True" Width="190" />
