@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "pEaOLuMRlH9qkCZuopCMQIzPinRim1sxyWY/w48QH8EBliamZ3jSB1pluPhte6XGg9Cmk3yAbBHNsoMRBYDNBA==",
+  "dgSpecHash": "O7/5KfC+FyhrzJ98Tbzlw8RrwUyAQ8ukdMEOH7bgkWXZmkRctuLGGJa/VoMt7H1q3qf89/5m21O+zcv8eQY0WQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Michael\\Documents\\Aplicada 1\\Parcial1\\Parcial1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Michael\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\Michael\\.nuget\\packages\\materialdesigncolors\\2.0.4\\materialdesigncolors.2.0.4.nupkg.sha512",
+    "C:\\Users\\Michael\\.nuget\\packages\\materialdesignthemes\\4.3.0\\materialdesignthemes.4.3.0.nupkg.sha512",
     "C:\\Users\\Michael\\.nuget\\packages\\microsoft.data.sqlite.core\\6.0.2\\microsoft.data.sqlite.core.6.0.2.nupkg.sha512",
     "C:\\Users\\Michael\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.2\\microsoft.entityframeworkcore.6.0.2.nupkg.sha512",
     "C:\\Users\\Michael\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.2\\microsoft.entityframeworkcore.abstractions.6.0.2.nupkg.sha512",
